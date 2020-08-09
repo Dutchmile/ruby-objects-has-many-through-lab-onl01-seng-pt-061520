@@ -16,4 +16,7 @@ class Genre
   def self.all
     @@all_g
   end
+
+  def artists
+  end
 end
