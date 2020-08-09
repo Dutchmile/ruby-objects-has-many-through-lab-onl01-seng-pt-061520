@@ -11,4 +11,7 @@ class Appointment
     @@all_a << self
   end
 
+  def self.all
+    @@all_a
+  end
 end
