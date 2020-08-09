@@ -10,3 +10,15 @@ class Doctor
   end
 
   def appointments
+    Appointment.all.select {|a| a.doctor == self}
+  end
+
+  def new_appointment(date, patient)
+    Appointment.new(date, patient, self)
+  end
+
+  def patients
+    patients = []
+    Appointment.all.select {|a| patients << a.patient if a.doctor == self}
+    patients
+  end
