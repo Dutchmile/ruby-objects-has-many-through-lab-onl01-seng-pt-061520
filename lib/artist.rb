@@ -2,11 +2,11 @@ class Artist
 
   attr_reader :name
 
-  @@all__ar = []
+  @@all_ar = []
 
   def initialize(name)
     @name = name
-    @@all << self
+    @@all_ar << self
   end
 
   def self.all
