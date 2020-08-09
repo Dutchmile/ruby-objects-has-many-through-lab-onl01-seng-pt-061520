@@ -26,5 +26,6 @@ class Artist
   def genres
     artist_genres = []
     Song.all.select {|s| artist_genres << s.genre if s.artist == self}
+    artist_genres
   end
 end
