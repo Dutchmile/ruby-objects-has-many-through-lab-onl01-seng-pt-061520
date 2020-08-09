@@ -23,4 +23,8 @@ class Doctor
     patients
   end
 
+  def all
+    @@all_d
+  end
+
 end
