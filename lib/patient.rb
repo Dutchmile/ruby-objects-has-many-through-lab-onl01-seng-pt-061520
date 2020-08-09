@@ -22,7 +22,7 @@ class Patient
 
   def doctors
     doctors = []
-    Appointment.all.select {|a| doctors << a if a.patient == self}
+    Appointment.all.select {|a| doctors << a.doctor if a.patient == self}
     doctors
   end
 
