@@ -23,7 +23,7 @@ class Doctor
     patients
   end
 
-  def all
+  def self.all
     @@all_d
   end
 
