@@ -22,3 +22,5 @@ class Doctor
     Appointment.all.select {|a| patients << a.patient if a.doctor == self}
     patients
   end
+
+end
