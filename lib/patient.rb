@@ -17,12 +17,12 @@ class Patient
   end
 
   def appointments
-    Appointments.all.select {|a| a.patient == self}
+    Appointment.all.select {|a| a.patient == self}
   end
 
   def doctors
     doctors = []
-    Appointments.all.select {|a| doctors << a if a.patient == self}
+    Appointment.all.select {|a| doctors << a if a.patient == self}
     doctors
   end
 
