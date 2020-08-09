@@ -10,3 +10,5 @@ class Appointment
     @doctor = doctor
     @@all_a << self
   end
+
+end
