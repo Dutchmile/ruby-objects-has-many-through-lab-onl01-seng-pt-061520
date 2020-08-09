@@ -23,5 +23,7 @@ class Artist
     Song.new(name, self, genre)
   end
 
-
+  def genres
+    Song.all.select {|s| s.artist == self}
+  end
 end
